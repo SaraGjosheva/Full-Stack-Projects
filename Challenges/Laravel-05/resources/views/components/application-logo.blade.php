@@ -1,0 +1,2 @@
+<a class="navbar-brand d-flex align-items-center text-white fw-bolder fs-4" href="{{route('matches.index')}}"><img src="{{ asset('assets/images/logo.jpg') }}" alt="Logo" class="me-2" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+</a>

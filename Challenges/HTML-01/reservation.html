@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <script
+      src="https://kit.fontawesome.com/17dc55828f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"
+          ><i class="fa-solid fa-arrow-left"></i> Back link</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section align="center" id="contact-us">
+        <h1><u>Contact Us/Make a Reservation</u></h1>
+        <form>
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <br />
+          <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <br />
+          <div>
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <br />
+          <div>
+            <label for="time">Time: </label>
+            <input type="time" id="time" name="time" />
+          </div>
+          <br />
+          <div>
+            <label for="people">Number of People: </label>
+            <select id="people" name="people">
+              <option selected></option>
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+              <option value="five">Five</option>
+              <option value="six">Six</option>
+              <option value="seven">Seven</option>
+              <option value="eight">Eight</option>
+              <option value="nine">Nine</option>
+              <option value="ten">Ten</option>
+              <option value="more">More then ten - Contact Us</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="seating-preference">Seating Preference: </label>
+            <label for="indoor"
+              ><input
+                type="radio"
+                checked
+                id="indoor"
+                name="seating-preference"
+                value="indoor"
+              />Indoor</label
+            >
+            <label for="outdoor"
+              ><input
+                type="radio"
+                id="outdoor"
+                name="seating-preference"
+                value="outdoor"
+              />Outdoor</label
+            >
+          </div>
+          <br />
+          <div>
+            <label for="requests">Special Requests: </label>
+
+            <label for="vegetarian-options"
+              ><input
+                type="checkbox"
+                id="vegetarian-options"
+                name="vegetarian-options"
+              />Vegetarian Options</label
+            >
+
+            <label for="allergy-friendly"
+              ><input
+                type="checkbox"
+                id="allergy-friendly"
+                name="allergy-friendly"
+              />Allergy Friendly</label
+            >
+
+            <label for="window-seat"
+              ><input
+                type="checkbox"
+                id="window-seat"
+                name="window-seat"
+              />Window Seat</label
+            >
+
+            <label for="highchair"
+              ><input type="checkbox" id="highchair" name="highchair" />Need a
+              Highchair</label
+            >
+
+            <label for="special-occasion"
+              ><input
+                type="checkbox"
+                id="special-occasion"
+                name="special-occasion"
+              />Celebrating a Special Occasion</label
+            >
+          </div>
+          <br />
+          <div>
+            <label for="additional-notes">Additional Notes: </label>
+            <br />
+            <textarea
+              id="additional-notes"
+              name="additional-notes"
+              rows="3"
+              cols="20"
+            ></textarea>
+          </div>
+          <br />
+          <div><input type="submit" value="Submit Reservation" /></div>
+        </form>
+      </section>
+    </main>
+    <br />
+    <br />
+    <footer>
+      <section align="center" id="follow-us">
+        <p>Follow us on <a href="https://www.instagram.com/">instragram!</a></p>
+        <p>&copy; 2024 The Urban Garden Restaurant. All rights reserved.</p>
+      </section>
+    </footer>
+  </body>
+</html>

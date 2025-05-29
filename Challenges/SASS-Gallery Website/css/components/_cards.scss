@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .column {
+    flex-basis: 33.333%;
+
+    @include mix.tablet-styles {
+      flex-basis: 50%;
+    }
+
+    @include mix.mobile-l-styles {
+      flex-basis: 100%;
+    }
+
+    .card {
+      a {
+        position: relative;
+
+        img {
+          position: relative;
+          transition: all 0.3s ease-in;
+          opacity: 1;
+          z-index: 1;
+        }
+
+        p {
+          width: 85%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          visibility: hidden;
+          font-size: var.$font-size-medium;
+          font-weight: var.$font-weight-normal;
+          color: var.$text-color-secondary;
+          padding: math.div(var.$gutter-base, 1.4) 0;
+          margin-bottom: 0;
+          border-top: 2px solid var.$text-color-secondary;
+          border-bottom: 2px solid var.$text-color-secondary;
+          transition: all 0.3s ease-in;
+          opacity: 0;
+          z-index: 2;
+        }
+
+        &:hover {
+          background-color: var.$background-color-base;
+
+          img {
+            visibility: hidden;
+            opacity: 0;
+          }
+          p {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

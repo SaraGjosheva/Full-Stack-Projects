@@ -1,0 +1,2 @@
+<a class="navbar-brand d-flex align-items-center text-white fw-bolder fs-4" href="{{route('dashboard')}}"><img src="{{ asset('assets/logo.png') }}" alt="Logo" class="me-2" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+</a>

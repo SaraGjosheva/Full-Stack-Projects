@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife Fitness</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Banner -->
+    <header>
+      <section class="text-white">
+        <h1>Welcome to FitLife Fitness</h1>
+        <p>
+          Your journey to a healthier lifestyle begins here. Join us for
+          exciting workouts and personalized fitness plans.
+        </p>
+        <a href="#classes">Explore classes</a>
+      </section>
+    </header>
+
+    <!-- About -->
+    <main>
+      <section id="about-us">
+        <div>
+          <h2>About us</h2>
+          <p>
+            FitLife Fitness is committed to helping you achieve your fitness
+            goals. Our experienced trainers and state-of-the-art facilities
+            ensure a positive and motivating environment for all fitness levels.
+          </p>
+          <p>
+            Discover a wide range of fitness programs tailored to meet your
+            specific needs, including strength training, cardio, yoga, and more.
+          </p>
+        </div>
+      </section>
+
+      <!-- Classes -->
+      <section id="classes">
+        <h2>Our classes</h2>
+        <div class="wrap">
+          <!-- Cardio Blast -->
+          <div class="card-container-row">
+            <div class="column">
+              <div class="card">
+                <div class="parent-img">
+                  <img src="./images/cardio.jpg" alt="Cardio Blast" />
+                  <span class="discount">20%</span>
+                </div>
+                <div class="content-box">
+                  <a href="#"><h3>Cardio blast</h3></a>
+                  <p>
+                    A high-intensity cardio workout to boost your endurance and
+                    burn calories. Join us for a heart-pumping session that will
+                    leave you energized!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Yoga Fusion -->
+            <div class="column">
+              <div class="card">
+                <div class="parent-img">
+                  <img src="./images/yoga.jpg" alt="Yoga Fusion" />
+                  <span class="discount">10%</span>
+                </div>
+                <div class="content-box">
+                  <a href="#"><h3>Yoga fusion</h3></a>
+                  <p>
+                    Experience the perfect blend of traditional yoga and modern
+                    fitness. Improve flexibility, balance, and inner strength
+                    with our Yoga Fusion classes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strength Training -->
+          <div class="card-container-row">
+            <div class="column">
+              <div class="card">
+                <div class="parent-img">
+                  <img src="./images/strength.jpg" alt="Strength Training" />
+                  <span class="discount">20%</span>
+                </div>
+                <div class="content-box">
+                  <a href="#"><h3>Strength training</h3></a>
+                  <p>
+                    Build lean muscle and increase your strength with our
+                    effective strength training classes. Suitable for all
+                    fitness levels, our trainers will guide you through proper
+                    techniques for maximum results.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- HIIT Revolution -->
+            <div class="column">
+              <div class="card">
+                <div class="parent-img">
+                  <img src="./images/hit.jpg" alt="HIIT Revolution" />
+                  <span class="discount">15%</span>
+                </div>
+                <div class="content-box">
+                  <a href="#"><h3>HIIT revolution</h3></a>
+                  <p>
+                    Revolutionize your fitness routine with High-Intensity
+                    Interval Training (HIIT). Burn calories and boost metabolism
+                    in our dynamic and challenging HIIT Revolution classes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule">
+        <div>
+          <h2>Class schedule</h2>
+          <p>
+            Check out our weekly class schedule and plan your workouts. We offer
+            flexible timings to accommodate your busy lifestyle.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>class</th>
+                <th>day</th>
+                <th>time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cardio blast</td>
+                <td>monday, wednesday, friday</td>
+                <td>6:00 pm - 7:00 pm</td>
+              </tr>
+              <tr>
+                <td>strength training</td>
+                <td>tuesday, thursday</td>
+                <td>5:30 pm - 6:30 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="parent">
+          <div class="contact-content">
+            <h2>Contact us</h2>
+            <p>Have questions or want to get in touch? Reach out to us!</p>
+          </div>
+          <div class="positioning">
+            <form>
+              <div>
+                <label for="name">name:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div>
+                <label for="message">message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="5"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div>
+                <button class="text-white" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white">
+      <p>&copy; 2024 FitLife Fitness. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
