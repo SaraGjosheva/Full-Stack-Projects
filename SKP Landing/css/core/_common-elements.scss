@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+}
+
+h3,
+h4 {
+  font-size: var.$heading-size-tiny;
+}
+
+.btn-dark {
+  cursor: pointer;
+  border-radius: var.$border-radius-secondary;
+  padding: 8px 22px;
+}
+
+.card-button-shadow {
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.4) !important;
+}

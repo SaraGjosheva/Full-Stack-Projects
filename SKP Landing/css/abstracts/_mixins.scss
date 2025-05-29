@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+// RESPONSIVE MOBILE FIRST DESIGN MIXINS
+@mixin four-k-styles {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin laptop-l-styles {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop-m-styles {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l-styles {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobile-m-styles {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-s-styles {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 767px) and (max-width: 1020px) {
+    @content;
+  }
+}
+
+@mixin banner-height {
+  @media (min-width: 1024px) and (max-width: 1435px) {
+    @content;
+  }
+}

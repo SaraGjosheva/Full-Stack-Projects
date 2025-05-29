@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.feedback {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.1),
+      rgba(128, 128, 128, 0.1)
+    ),
+    url("../Assets/Pictures/Testimonials/testimonial-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .card {
+    background-color: transparent;
+
+    .person {
+      width: 50px;
+      height: 50px;
+    }
+
+    span {
+      font-size: var.$font-size-small;
+    }
+  }
+
+  .shadow-lg {
+    box-shadow: -5px 5px 8px 6px rgba(0, 0, 0, 0.4) !important;
+  }
+}

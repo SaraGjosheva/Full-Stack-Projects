@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+header {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Assets/Pictures/HeroSection-BackgroundPicture/360_F_380249159_rvDYzhjR8eCnnzFnVKPYNptNVkejba7J.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var.$text-color-base;
+
+  @include mix.banner-height {
+    height: 85vh;
+  }
+
+  @include mix.laptop-l-styles {
+    height: 70vh;
+  }
+
+  div {
+    h1 {
+      font-size: var.$heading-size-big;
+
+      @include mix.tablet-styles {
+        font-size: var.$heading-size-bigger;
+      }
+    }
+
+    p {
+      font-size: var.$font-size-medium;
+
+      @include mix.tablet-styles {
+        font-size: var.$font-size-big;
+      }
+    }
+
+    a {
+      margin-top: 3rem;
+    }
+  }
+}

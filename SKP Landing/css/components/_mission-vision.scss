@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.mission-vision {
+  .w-40 {
+    width: 40% !important;
+  }
+}

@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.partnering-with-us {
+  .light-green {
+    color: var.$text-color-tertiary;
+  }
+
+  .width-icon {
+    width: 40px;
+  }
+
+  .col-padding {
+    padding-left: 80px;
+
+    @include mix.tablet-styles {
+      padding-left: 40px;
+    }
+
+    @include mix.laptop-m-styles {
+      padding-left: 50px;
+    }
+
+    @include mix.laptop-l-styles {
+      padding-left: 110px;
+    }
+
+    @include mix.four-k-styles {
+      padding-left: 114px;
+    }
+  }
+}

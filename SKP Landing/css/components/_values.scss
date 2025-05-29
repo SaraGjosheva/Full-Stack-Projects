@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.values {
+  h5 {
+    font-size: var.$heading-size-medium;
+
+    @include mix.tablet {
+      font-size: var.$heading-size-tiny;
+    }
+  }
+
+  .pb {
+    padding-bottom: 10px;
+
+    @include mix.laptop-m-styles {
+      padding-bottom: 13px;
+    }
+
+    @include mix.laptop-l-styles {
+      padding-bottom: 18px;
+    }
+
+    @include mix.four-k-styles {
+      padding-bottom: 19px;
+    }
+  }
+}

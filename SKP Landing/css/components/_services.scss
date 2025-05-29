@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.services {
+  .text-justify {
+    text-align: justify;
+  }
+
+  .first-row {
+    img {
+      width: inherit;
+    }
+  }
+
+  .card {
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .card-body {
+      padding: math.div(var.$gutter-base, 2) 0;
+    }
+
+    @include mix.tablet {
+      h4 {
+        font-size: var.$heading-size-tiniest;
+      }
+    }
+  }
+}

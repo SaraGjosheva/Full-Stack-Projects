@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+footer {
+  background-image: url("../Assets/Pictures/HeroSection-BackgroundPicture/hero-background-contact-us.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var.$text-color-secondary;
+
+  .border-bottom {
+    border-width: 2.4px !important;
+  }
+
+  .ps {
+    padding-left: (var.$gutter-base * 2.4); // mobile-s-styles
+
+    a {
+      font-size: var.$font-size-small;
+
+      @include mix.tablet {
+        font-size: var.$font-size-tiny;
+      }
+    }
+
+    .w-40 {
+      width: 40px !important;
+
+      @include mix.tablet {
+        width: 20px !important;
+      }
+    }
+
+    .fa-2x {
+      @include mix.tablet {
+        font-size: 1rem !important;
+      }
+    }
+
+    @include mix.mobile-m-styles {
+      padding-left: (var.$gutter-base * 3) !important;
+    }
+
+    @include mix.mobile-l-styles {
+      padding-left: (var.$gutter-base * 3.4) !important;
+    }
+
+    @include mix.tablet-styles {
+      padding-left: math.div(var.$gutter-base, 2) !important;
+    }
+
+    @include mix.laptop-m-styles {
+      padding-left: (var.$gutter-base * 1.2) !important;
+    }
+
+    @include mix.laptop-l-styles {
+      padding-left: (var.$gutter-base * 2) !important;
+    }
+  }
+
+  .form-control:focus {
+    border-color: var.$text-color-tertiary !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+  }
+
+  .social-media {
+    a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}

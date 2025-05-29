@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.partners {
+  hr {
+    width: 50% !important;
+    margin: 0 auto !important;
+    opacity: 1 !important;
+    border-top: 2.3px solid var.$text-color-secondary !important;
+
+    @include mix.four-k-styles {
+      width: 100% !important;
+    }
+  }
+
+  img {
+    width: 150px !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: var.$text-color-primary !important;
+    width: 5% !important;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0 !important;
+    bottom: -35px !important;
+    gap: var.$gap-base;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: var.$background-color-secondary !important;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: var.$border-radius-circle !important;
+
+    &.active {
+      background-color: var.$background-color-primary !important;
+    }
+  }
+}
